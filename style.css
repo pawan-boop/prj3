@@ -1,0 +1,233 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+#main {
+  width: 100vw;
+  font-family: inconsolata, monospace;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  color: white;
+}
+#ah1 {
+  font-size: 43px;
+  width: 60%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-65%, -50%);
+  word-spacing: -14px;
+  z-index: 1;
+}
+#bh1 {
+  font-size: 390px;
+  color: transparent;
+  -webkit-text-stroke: 4px rgb(230, 11, 95);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-30%, -50%);
+}
+
+#sbh1 {
+  color: transparent;
+  -webkit-text-stroke: 5px rgb(9, 199, 183);
+}
+#loader {
+  z-index: 9;
+  position: fixed;
+  font-size: 50px;
+}
+.pg {
+  height: 100vh;
+  width: 100vw;
+  flex-shrink: 0;
+  position: relative;
+}
+.pg:nth-child(1) {
+  background-color: rgb(17, 16, 16);
+  padding: 30px;
+}
+.pg:nth-child(2) {
+  background-color: #eead63;
+}
+.pg:nth-child(3) {
+  background-color: rgb(120, 236, 198);
+}
+.pg:nth-child(4) {
+  background-color: rgb(231, 70, 170);
+}
+.lines {
+  height: 2px;
+  width: 37px;
+  background-color: white;
+  border-radius: 30px;
+  margin-bottom: 13px;
+  transition: all cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s;
+}
+.lines:nth-child(3) {
+  transform-origin: left center;
+}
+
+.lines:nth-child(2) {
+  transform-origin: center;
+}
+#ml {
+  position: fixed;
+  right: 3%;
+  top: 4%;
+  z-index: 9;
+}
+.page {
+  height: 100vh;
+  width: 100vw;
+  font-family: Brandon Grotesque;
+  color: white;
+  background-color: rgb(17, 16, 16);
+  position: relative;
+}
+.growtext {
+  font-size: 30px;
+  line-height: 60px;
+  left: 35%;
+  position: absolute;
+  text-align: right;
+  top: 40%;
+}
+
+#nav {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(17, 16, 16);
+  color: white;
+  white-space: pre-line;
+  padding: 10% 10%;
+  flex-shrink: 0;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+
+#nav h1 {
+  font-size: 60px;
+  margin-bottom: 14px;
+  font-weight: 300;
+  display: inline-block;
+  position: relative;
+  background-color: #e9b171;
+  width: 0;
+}
+#nav #a::before {
+  content: "";
+  width: 0px;
+  background-color: rgb(236, 109, 187);
+  height: 71px;
+  position: absolute;
+}
+
+#nav #a::after {
+  content: "HOME";
+  width: 0px;
+  background-color: rgb(141, 230, 200);
+  height: 71px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#nav #b::before {
+  content: "";
+  width: 0px;
+  background-color: rgb(236, 109, 187);
+  height: 71px;
+  position: absolute;
+}
+
+#nav #b::after {
+  content: "PROJECTS";
+  width: 0px;
+  background-color: rgb(141, 230, 200);
+  height: 71px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#nav #c::before {
+  content: "";
+  width: 0px;
+  background-color: rgb(236, 109, 187);
+  height: 71px;
+  position: absolute;
+}
+
+#nav #c::after {
+  content: "ABOUT";
+  width: 0px;
+  background-color: rgb(141, 230, 200);
+  height: 71px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#nav #d::before {
+  content: "";
+  width: 0px;
+  background-color: rgb(236, 109, 187);
+  height: 71px;
+  position: absolute;
+}
+
+#nav #d::after {
+  content: "TRAINING";
+  width: 0px;
+  background-color: rgb(141, 230, 200);
+  height: 71px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#nav #e::before {
+  content: "";
+  width: 0px;
+  background-color: rgb(236, 109, 187);
+  height: 71px;
+  position: absolute;
+}
+
+#nav #e::after {
+  content: "SHOP";
+  width: 0px;
+  background-color: rgb(141, 230, 200);
+  height: 71px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#nav #f::before {
+  content: "";
+  width: 0px;
+  background-color: rgb(236, 109, 187);
+  height: 71px;
+  position: absolute;
+}
+
+#nav #f::after {
+  content: "VISIT";
+  width: 0px;
+  background-color: rgb(141, 230, 200);
+  height: 71px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
